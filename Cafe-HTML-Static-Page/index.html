@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe HTML | Static Page</title>
+    <link rel="icon" href="/src/img/cafe-logo.jpg" type="image/x-icon" />
+    <style>
+      .center {
+        border: 1px solid #1098ad;
+        width: 75%; /* Adjust the width as needed */
+        margin: 0 auto; /* Center the div horizontally */
+        padding: 20px; /* Add padding for spacing */
+      }
+
+      fieldset legend {
+        text-align: center;
+      }
+
+      fieldset div label:first-child {
+        font-weight: bold;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div class="center">
+      <!-- Add your content here -->
+      <h1 class="animate__animated animate__flip">Dado Tea Lunch Special</h1>
+      <p>
+        Monday through friday <br />
+        11am-3pm <br />
+        &#8377; 9.95 <br />
+      </p>
+
+      <p>Includes sandwich , snack , and drink</p>
+
+      <form action="">
+        <!-- Order Information -->
+
+        <fieldset>
+          <br />
+          <legend>Order Information</legend>
+
+          <div>
+            <label for="name" name="customer-name"> <b>Name</b> </label> <br />
+            <input type="text" id="name" />
+
+            <br />
+            <br />
+
+            <input type="radio" id="here" name="customer" value="here" />
+            <label for="here">Here</label><br />
+
+            <input type="radio" id="to-go" name="customer" value="togo" />
+            <label for="to-go">To Go</label><br />
+
+            <br />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Sandwiches</legend>
+          <div class="sandwich">
+            <!-- Monday -->
+
+            <label for="monday">Monday</label><br />
+            <input
+              type="radio"
+              id="tomato"
+              name="Monday_sandwich"
+              value="Tomato Mozzarella"
+            />
+            <label for="tomato">Tomato Mozzarella</label><br />
+            <input
+              type="radio"
+              id="chicken"
+              name="Monday_sandwich"
+              value="Chicken Salad"
+            />
+            <label for="chicken">Chicken Salad</label><br /><br />
+
+            <!-- Tuesday -->
+            <label for="tuesday"><b>Tuesday</b></label
+            ><br />
+            <input
+              type="radio"
+              id="greek-salad-wrap"
+              name="Tuesday_sandwich"
+              value="Greek Salad Wrap"
+            />
+            <label for="greek-salad-wrap">Greek Salad Wrap</label><br />
+            <input
+              type="radio"
+              id="toto-wrap"
+              name="Tuesday_sandwich"
+              value="Toto Wrap"
+            />
+            <label for="toto-wrap">Toto Wrap</label><br /><br />
+
+            <!-- Wednesday -->
+            <label for="wednesday"><b>Wednesday</b></label
+            ><br />
+            <input
+              type="radio"
+              id="red-pepper-hummus"
+              name="Wednesday_sandwich"
+              value="Red Pepper Hummus"
+            />
+            <label for="red-pepper-hummus">Red Pepper Hummus</label><br />
+            <input
+              type="radio"
+              id="roasted-turkey"
+              name="Wednesday_sandwich"
+              value="Roasted Turkey"
+            />
+            <label for="roasted-turkey">Roasted Turkey</label><br /><br />
+
+            <!-- Thursday -->
+            <label for="thursday"><b>Thursday</b></label
+            ><br />
+            <input
+              type="radio"
+              id="carrot-ginger-hummus-wrap"
+              name="Thursday_sandwich"
+              value="Carrot-Ginger Hummus Wrap"
+            />
+            <label for="carrot-ginger-hummus-wrap"
+              >Carrot-Ginger Hummus Wrap</label
+            ><br />
+            <input
+              type="radio"
+              id="egg-salad"
+              name="Thursday_sandwich"
+              value="Egg Salad"
+            />
+            <label for="egg-salad">Egg Salad</label><br /><br />
+
+            <!-- Friday -->
+            <label for="friday"><b>Friday</b></label
+            ><br />
+            <input
+              type="radio"
+              id="dado-wrap"
+              name="Friday_sandwich"
+              value="Dado Wrap"
+            />
+            <label for="dado-wrap">Dado Wrap</label><br />
+            <input
+              type="radio"
+              id="tunda-salad"
+              name="Friday_sandwich"
+              value="Tuna Salad"
+            />
+            <label for="tunda-salad">Tunda Salad</label><br />
+            <hr />
+
+            <input
+              type="checkbox"
+              id="glu"
+              name="sandwich_gluten"
+              value="gluten-free-bread"
+            />
+            <label for="glu">Gluten Free Bread (&#8364;75 extra)</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Snack</legend>
+          <div>
+            <label for="apple">Snack:</label><br />
+            <input type="radio" id="apple" name="snack" value="Apple" />
+            <label for="apple">Apple</label><br />
+
+            <input type="radio" id="banana" name="snack" value="Banana" />
+            <label for="banana">Banana</label><br />
+
+            <input type="radio" id="chips" name="snack" value="Potato Chips" />
+            <label for="chips">Potato Chips</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Drink</legend>
+          <div>
+            <label for="drinks">Drinks</label><br />
+            <br />
+            <select
+              id="drinks"
+              name="drink_selection"
+              multiple="multiple"
+              size="5"
+            >
+              <optgroup label="Black Tea">
+                <option value="Hot black tea: Keemun">
+                  Hot black tea: Keemun
+                </option>
+                <option value="Iced black tea: Keemun">
+                  Iced black tea: Keemun
+                </option>
+                <option value="Hot black tea: Decaf Keemun">
+                  Hot black tea: Decaf Keemun
+                </option>
+                <option value="Iced black tea: Decaf Keemun">
+                  Iced black tea: Decaf Keemun
+                </option>
+              </optgroup>
+              <optgroup label="Green Tea">
+                <option value="Hot green tea: Sencha">
+                  Hot green tea: Sencha
+                </option>
+                <option value="Iced green tea: Sencha">
+                  Iced green tea: Sencha
+                </option>
+                <option value="Hot green tea: Decaf">
+                  Hot green tea: Decaf
+                </option>
+                <option value="Iced green tea: Decaf">
+                  Iced green tea: Decaf
+                </option>
+              </optgroup>
+              <optgroup label="Coffee">
+                <option value="Hot coffee">Hot coffee</option>
+                <option value="Hot decaf coffee">Hot decaf coffee</option>
+                <option value="Iced coffee">Iced coffee</option>
+                <option value="Iced decaf coffee">Iced decaf coffee</option>
+              </optgroup>
+              <optgroup label="Bubble Tea">
+                <option value="Bubble tea">Bubble tea</option>
+                <option value="Bubble tea with extra pearls ($1.50)">
+                  Bubble tea with extra pearls ($1.50)
+                </option>
+              </optgroup>
+            </select>
+            <br /><br />
+            <hr />
+            <input
+              type="checkbox"
+              id="Large-drink"
+              name="Drink"
+              value="Large-drink"
+            />
+            <label for="Large-drink">Large drink (&#8364;75 extra)</label>
+            <br />
+          </div>
+        </fieldset>
+
+        <br />
+        <!-- Button of submit -->
+        <div>
+          <input type="reset" value="Reset Order " />
+          <input type="submit" value="Place Order" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
